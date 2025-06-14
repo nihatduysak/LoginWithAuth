@@ -1,0 +1,131 @@
+body {
+  font-family: system-ui;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #f1f5f9;
+  padding: 12px 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #e0e7ff;
+  justify-content: flex-end;
+}
+
+.navbar span {
+  color: #6366f1;
+}
+
+.todo-app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+  padding: 40px 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.todo-actions {
+  display: flex;
+  gap: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #fff;
+  padding: 32px 28px;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px 0 #dbeafe;
+  min-width: 320px;
+  margin-bottom: 32px;
+}
+
+form label {
+  color: #374151;
+}
+
+form input {
+  padding: 8px 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+}
+
+form button {
+  margin-top: 8px;
+  padding: 10px 0;
+  background: #6366f1;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+form button:hover {
+  background: #4f46e5;
+}
+
+button {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  background: #38bdf8;
+  color: #fff;
+  font-weight: 500;
+  margin-top: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button[style*="color: red"] {
+  background: #f87171;
+}
+
+button:hover {
+  background: #0ea5e9;
+}
+
+h2, h3 {
+  margin-top: 24px;
+  color: #334155;
+}
+
+input[type="text"] {
+  margin-right: 8px;
+}
+
+input {
+  border: none;
+  padding: 8px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0 0;
+  width: 100%;
+  max-width: 340px;
+}
+
+li {
+  background: #f1f5f9;
+  margin-bottom: 8px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  color: #334155;
+  font-size: 1rem;
+  box-shadow: 0 1px 4px #e0e7ff;
+}
