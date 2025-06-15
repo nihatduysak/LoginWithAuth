@@ -1,12 +1,14 @@
 import { useState, useEffect } from "react";
+import Feed from "./pages/Feed";
 
 export default function TodoApp() {
   const [isLogin, setIsLogin] = useState(!!localStorage.token);
   const [username, setUsername] = useState(localStorage.username || "");
+  const [selected, setSelected] = useState(null);
 
   return (
     <div className="todo-app">
-      <h1>Login + Token + Todo Ekleme</h1>
+      <h1>Login + Token + Todo Ekleme + Tweet</h1>
       {isLogin ? (
         <>
           <div className="navbar">
@@ -22,7 +24,24 @@ export default function TodoApp() {
               Çıkış Yap
             </button>
           </div>
-          <AddTodo />
+          {!selected && (
+            <div>
+              <button onClick={() => setSelected('todo')}>Todo</button>
+              <button onClick={() => setSelected('tweet')}>Tweet</button>
+            </div>
+          )}
+          {selected === 'todo' && (
+            <>
+              <button className="anasayfaBtn" onClick={() => setSelected(null)}>Anasayfa</button>
+              <AddTodo />
+            </>
+          )}
+          {selected === 'tweet' && (
+              <>
+                <button className="anasayfaBtn" onClick={() => setSelected(null)}>Anasayfa</button>
+                <Feed username={username} />
+              </>
+          )}
         </>
       ) : (
         <LoginForm setIsLogin={setIsLogin} setUsername={setUsername} />

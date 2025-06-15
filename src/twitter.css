@@ -1,0 +1,134 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+  background: #f7f9fa;
+  padding: 12px 24px;
+  border: 8px;
+  box-shadow: 0 2px 8px #e0e7ff;
+}
+
+.navbar-center {
+  flex: 1;
+}
+
+.navbar-right-side {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tweet-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #FFF;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #e0e7ff;
+  padding: 20px 24px;
+  margin-bottom: 20px;
+}
+
+.tweet-form textarea {
+  resize: none;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 12px;
+  transition: box-shadow 0.2s;
+}
+
+.tweet-form textarea:hover {
+  outline: none;
+  box-shadow: 0 0 0 2px #6366f1;
+  background: #FFF;
+}
+
+.tweet-form button {
+  align-items: flex-end;
+  background: #6366f1;
+  color: #FFF;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 24px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.tweet-form button:disabled {
+  background: #c7d2fe;
+  cursor: not-allowed;
+}
+
+.tweet-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.feed {
+  max-width: 520px;
+  margin: 32px auto 0 auto;
+  background: #f7f9fa;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px #e0e7ff;
+  padding: 0 28px 24px 28px;
+}
+
+.feed h2 {
+  color: #6366f1;
+  margin-bottom: 12px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  margin: 40px auto;
+  background: #FFF;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 32px 24px;
+  text-align: center;
+}
+
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #1da1f2;
+  margin-bottom: 16px;
+  object-fit: cover;
+}
+
+.profile h2 {
+  margin: 0 0 8px 8;
+  color: #222;
+}
+
+.profile p {
+  color: #555;
+}
+
+.profile-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.profile-info li {
+  color: #1da1f2;
+}
+
+.anasayfaBtn {
+  margin-bottom: 10px;
+}
